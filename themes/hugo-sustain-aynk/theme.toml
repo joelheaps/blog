@@ -1,0 +1,18 @@
+name = "Sustain-AYNTK"
+license = "MIT"
+licenselink = "https://github.com/altrdev/hugo-sustain-ayntk/blob/master/LICENSE.md"
+description = "Travel blog built with Bootstrap, powered by Hugo"
+homepage = "https://github.com/altrdev/hugo-sustain-ayntk"
+tags = ["blog", "minimal", "responsive"]
+features = ["responsive", "syntax highlighting"]
+min_version = 0.17
+
+[author]
+  name = "Alessandro Travi"
+  homepage = "https://github.com/altrdev"
+
+# If porting an existing theme
+[original]
+  name = "Sustain"
+  homepage = "https://github.com/nurlansu/hugo-sustain"
+  repo = "https://github.com/nurlansu/hugo-sustain"

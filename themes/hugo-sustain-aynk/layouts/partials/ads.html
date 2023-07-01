@@ -1,0 +1,19 @@
+{{ with .Site.Params.amazon_onelink }}
+<div id="amzn-assoc-ad-{{ . }}"></div>
+<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ . }}"></script>
+{{ end }}
+
+{{ if .Site.Params.amazon_ads }}
+<div class="ads">
+    {{ if .Site.IsServer }}
+    <div class="fakeAds jumbotron">Fake Ads Banner</div>
+    {{ else }}
+    <div class="desktopBanner">
+        <iframe src="{{ .Site.Params.amazon_ads.desktopBanner }}" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+    </div>
+    <div class="mobileBanner">
+        <iframe src="{{ .Site.Params.amazon_ads.mobileBanner }}" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

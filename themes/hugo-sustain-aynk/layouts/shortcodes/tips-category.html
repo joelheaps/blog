@@ -1,0 +1,9 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $page := (.Get 0) }}
+{{ $url := ref . $page }}
+
+<p style="margin-bottom: 50px;">
+    {{ range $data.tips }}
+        <b><a href="{{ $url }}#{{.name}}" style="margin: 0px 4px">{{ .name }}</a></b>
+    {{ end }}
+</p>

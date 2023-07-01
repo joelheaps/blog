@@ -1,0 +1,58 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ partial "head" . }}
+<body>
+<div id="wrap">
+    <!-- Header -->
+    {{ partial "header" . }}
+    <div class="container">
+        <h1>
+            <strong><a href="{{ .Permalink }}">{{ i18n "articles" }}</a></strong>
+        </h1>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{ range .Data.Pages.ByPublishDate.Reverse }}
+                {{ if .Next }}
+                <hr>
+                {{ end }}
+                <div class="row" style="padding: 10px 0px">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        {{ $alt := .Title | markdownify }}
+                        {{ if .Params.image }}
+                        {{ $imageFilename := substr .Params.image 6 }}
+                        {{ with .Site.GetPage "media" }}
+                        {{ $original := .Resources.GetMatch $imageFilename }}
+                        {{ with ($original.Resize "800x") }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $alt }}" style="width: 100%"/>
+                        {{ end }}
+                        {{ end }}
+                        {{ else }}
+                        {{ $imageFilename := substr .Site.Params.ogimage 6 }}
+                        {{ with .Site.GetPage "media" }}
+                        {{ $original := .Resources.GetMatch $imageFilename }}
+                        {{ with ($original.Resize "800x") }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $alt }}" style="width: 100%"/>
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                        <h6>
+                            {{ .Date.Day }} {{ index $data.months (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                        </h6>
+                        <h5 style="text-align: left">
+                            <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></strong>
+                        </h5>
+                        <h5 style="text-align: left">
+                            {{ .Summary }}
+                        </h5>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+{{ partial "footer" . }}
+</body>
+</html>

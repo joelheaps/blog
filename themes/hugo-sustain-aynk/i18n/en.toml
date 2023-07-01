@@ -1,0 +1,56 @@
+[co-authored]
+other = "co-authored by"
+
+[contact-header]
+other = "Contact us"
+
+[contact-name]
+other = "Name"
+
+[contact-email]
+other = "Email address"
+
+[contact-email-help]
+other = "We'll never share your email with anyone else."
+
+[contact-message]
+other = "Message"
+
+[contact-send]
+other = "Send"
+
+[contact-alert-success]
+other = "Success"
+
+[contact-alert-success-message]
+other = "We received your message and we will reply as soon as possible"
+
+[contact-alert-error]
+other = "Error"
+
+[contact-alert-error-message]
+other = "An unexpected error occurred, please try again"
+
+[articles]
+other = "Articles"
+
+[prefix-subtitle]
+other = "Posted on"
+
+[suffix-subtitle]
+other = "by"
+
+[related-posts]
+other = "Related Posts"
+
+[prefix-coffee]
+other = "If you like this post buy us a "
+
+[suffix-coffee]
+other = "coffee"
+
+[donation-page]
+other = "donate"
+
+[on-top]
+other = "Click to return on the top page"

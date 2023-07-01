@@ -1,0 +1,19 @@
+{{ $imagename := .Get "name" }}
+{{ $altText := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+
+{{ with .Site.GetPage "media" }}
+    {{ $original := .Resources.GetMatch (printf "*%s*" ($imagename)) }}
+    <figure>
+        <img srcset='
+            {{ ($original.Resize "320x").RelPermalink }} 320w,
+            {{ ($original.Resize "600x").RelPermalink }} 600w,
+            {{ ($original.Resize "1200x").RelPermalink }} 2x'
+            src='{{ ($original.Resize "600x").RelPermalink }}' alt='{{$altText}}' class='img-responsive-full'/>
+        <figcaption class="img-figcaption">
+            <p>{{ $caption }}</p>
+        </figcaption>
+    </figure>
+{{ else }}
+    could not find image
+{{ end }}
