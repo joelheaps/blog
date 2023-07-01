@@ -99,7 +99,7 @@ L.Control.Elevation = L.Control.extend({
             decimalsY: 0,
             formatter: undefined
         },
-        imperial: false,
+        imperial: true,
         interpolation: "curveLinear",
         lazyLoadJS: true,
         legend: true,
