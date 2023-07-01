@@ -86,7 +86,7 @@ L.Control.Elevation = L.Control.extend({
             },
             polyline_options: {
                 className: '',
-                color: '#201B1D',
+                color: '#566B13',
                 opacity: 0.75,
                 weight: 5,
                 lineCap: 'round'
@@ -99,7 +99,7 @@ L.Control.Elevation = L.Control.extend({
             decimalsY: 0,
             formatter: undefined
         },
-        imperial: true,
+        imperial: false,
         interpolation: "curveLinear",
         lazyLoadJS: true,
         legend: true,
@@ -118,7 +118,7 @@ L.Control.Elevation = L.Control.extend({
         position: "topright",
         reverseCoords: false,
         skipNullZCoords: false,
-        theme: "blog-theme",
+        theme: "lightblue-theme",
         margins: {
             top: 10,
             right: 20,
@@ -233,6 +233,7 @@ L.Control.Elevation = L.Control.extend({
         if (typeof options.followPositionMarker !== "undefined") this.options.followMarker = options.followPositionMarker;
         if (typeof options.useLeafletMarker !== "undefined") this.options.marker = options.useLeafletMarker ? 'position-marker' : 'elevation-line';
         if (typeof options.leafletMarkerIcon !== "undefined") this.options.markerIcon = options.leafletMarkerIcon;
+        if (typeof options.download !== "undefined") this.options.downloadLink = options.download;
 
         // L.Util.setOptions(this, options);
         this.options = this._deepMerge({}, this.options, options);
@@ -953,6 +954,18 @@ L.Control.Elevation = L.Control.extend({
         return this._deepMerge(target, ...sources);
     },
 
+    _saveFile: function(fileUrl) {
+        var d = document,
+            a = d.createElement('a'),
+            b = d.body;
+        a.href = fileUrl;
+        a.target = '_new';
+        a.download = ""; // fileName
+        a.style.display = 'none';
+        b.appendChild(a);
+        a.click();
+        b.removeChild(a);
+    },
 
     _dragHandler: function() {
         //we don't want map events to occur here
@@ -1612,7 +1625,27 @@ L.Control.Elevation = L.Control.extend({
             this.track_info.elevation_min = this._minElevation || 0;
             d3.select(this.summaryDiv).html('<span class="totlen"><span class="summarylabel">Total Length: </span><span class="summaryvalue">' + this.track_info.distance.toFixed(2) + ' ' + this._xLabel + '</span></span><span class="maxele"><span class="summarylabel">Max Elevation: </span><span class="summaryvalue">' + this.track_info.elevation_max.toFixed(2) + ' ' + this._yLabel + '</span></span><span class="minele"><span class="summarylabel">Min Elevation: </span><span class="summaryvalue">' + this.track_info.elevation_min.toFixed(2) + ' ' + this._yLabel + '</span></span>');
         }
+        if (this.options.downloadLink && this._downloadURL) { // TODO: generate dynamically file content instead of using static file urls.
+            var span = document.createElement('span');
+            span.className = 'download';
+            var save = document.createElement('a');
+            save.innerHTML = "Download";
+            save.href = "#";
+            save.onclick = function(e) {
+                e.preventDefault();
+                var evt = { confirm: this._saveFile.bind(this, this._downloadURL) };
+                var type = this.options.downloadLink;
+                if (type == 'modal') {
+                    if (typeof CustomEvent === "function") document.dispatchEvent(new CustomEvent("eletrack_download", { detail: evt }));
+                    if (this.fire) this.fire('eletrack_download', evt);
+                    if (this._map) this._map.fire('eletrack_download', evt);
+                } else if (type == 'link' || type === true) {
+                    evt.confirm();
+                }
+            }.bind(this);
 
+            this.summaryDiv.appendChild(span).appendChild(save);
+        }
     },
 
     _width: function() {
