@@ -12,8 +12,8 @@
 }
 
 .elevation-control .background {
-  background-color: var(--accent);
-  border-radius: 5px;
+  background-color: var(--primary);
+  border-radius: 0px 0px 10px 10px;
   overflow: visible;
   display: block;
   touch-action: none;
@@ -37,7 +37,8 @@
 }
 
 .elevation-control .grid .tick line {
-  stroke: var(--ele-grid, #EEE);
+  stroke: var(--background);
+  opacity: 0;;
   stroke-width: 1px;
   shape-rendering: crispEdges;
 }
@@ -62,7 +63,7 @@
 }
 
 .elevation-control .area {
-  fill: var(--primary);
+  fill: var(--accent);
   stroke: var(--accent);
   stroke-width: 1.2;
   paint-order: stroke fill;
