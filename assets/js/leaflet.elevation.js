@@ -118,7 +118,7 @@ L.Control.Elevation = L.Control.extend({
         position: "topright",
         reverseCoords: false,
         skipNullZCoords: false,
-        theme: "lightblue-theme",
+        theme: "my-theme",
         margins: {
             top: 10,
             right: 20,
@@ -1199,8 +1199,8 @@ L.Control.Elevation = L.Control.extend({
             .attr("width", opts.width)
             .attr("height", opts.height);
 
-        var summary = this.summaryDiv = container.append("div")
-            .attr("class", "elevation-summary " + this.options.summary + "-summary").node();
+        // var summary = this.summaryDiv = container.append("div")
+        //     .attr("class", "elevation-summary " + this.options.summary + "-summary").node();
 
         this._appendChart(svg);
         this._updateSummary();

@@ -12,7 +12,7 @@
 }
 
 .elevation-control .background {
-  background-color: var(--ele-bg, rgba(70, 130, 180, 0.2));
+  background-color: var(--accent-primary);
   border-radius: 5px;
   overflow: visible;
   display: block;
@@ -31,8 +31,8 @@
 
 .elevation-control .axis line,
 .elevation-control .axis path {
-  stroke: var(--ele-axis, #2D1130);
-  stroke-width: 1;
+  stroke: var(--accent-secondary);
+  stroke-width: 2px;
   fill: none;
 }
 
@@ -49,10 +49,9 @@
 .elevation-control .axis text,
 .elevation-control .legend text,
 .elevation-control .point text {
-  fill: #000;
-  font-weight: 700;
+  color: var(--primary);
+  font-weight: normal;
   paint-order: stroke fill;
-  stroke: #fff;
   stroke-width: 2px
 }
 
@@ -61,8 +60,8 @@
 }
 
 .elevation-control .area {
-  fill: var(--ele-area, #4682B4);
-  stroke: var(--ele-stroke, #000);
+  fill: var(--primary);
+  stroke: var(--accent-primary);
   stroke-width: 1.2;
   paint-order: stroke fill;
 }
@@ -262,62 +261,6 @@
   --ele-marker: url(../images/elevation-position.svg);
 }
 
-/* LIME THEME ///////////////////////////////////////////////////// */
-.lime-theme {
-  --ele-bg: rgba(156, 194, 34, 0.2);
-  --ele-axis: #566B13;
-  --ele-area: #9CC222;
-  --ele-grid: #CCC;
-  --ele-brush: rgba(99, 126, 11, 0.4);
-  --ele-poly: #566B13;
-  --ele-line: #70ab00;
-}
-
-/* STEELBLUE THEME //////////////////////////////////////////////// */
-.steelblue-theme {
-  --ele-axis: #0D1821;
-  --ele-area: #4682B4;
-  --ele-brush: rgba(23, 74, 117, 0.4);
-  --ele-line: #174A75;
-}
-
-/* PURPLE THEME /////////////////////////////////////////////////// */
-.purple-theme {
-  --ele-bg: rgba(115, 44, 123, 0.2);
-  --ele-area: #732C7B;
-  --ele-brush: rgba(74, 14, 80, 0.4);
-  --ele-line: #732c7b;
-}
-
-/* YELLOW THEME /////////////////////////////////////////////////// */
-.yellow-theme {
-  --ele-area: #FF0;
-}
-
-/* RED THEME ////////////////////////////////////////////////////// */
-.red-theme {
-  --ele-area: #F00;
-}
-
-/* MAGENTA THEME ////////////////////////////////////////////////// */
-.magenta-theme {
-  --ele-bg: rgba(255, 255, 255, 0.47);
-  --ele-area: #FF005E;
-}
-
-/* LIGHTBLUE THEME //////////////////////////////////////////////// */
-.lightblue-theme {
-  --ele-area: #3366CC;
-  --ele-alpha: 0.45;
-  --ele-stroke: #4682B4;
-  --ele-circle: #fff;
-  --ele-line: #000;
-}
-
-.elevation-detached.lightblue-theme .area {
-  stroke: #3366CC;
-}
-
 /* leaflet-distance-markers */
 .dist-marker {
   font-size: 0.5rem;
@@ -327,3 +270,5 @@
   color: #000;
   background: #fff;
 }
+
+
