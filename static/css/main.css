@@ -1,10 +1,9 @@
 :root {
-    --background: #F2F1E1;
-    --primary: #21171B;
-    --secondary: #293651;
+    --background: #40513B;
+    --accent: #79936c;
+    --primary: #EDF1D6;
+    --secondary: #EDF1D6;
     --secondary-transparent: rgba(41, 54, 81, 0.2);
-    --accent-primary: #D9D8CA;
-    --accent-secondary: #4D3C41;
 }
 
 body {
@@ -16,9 +15,8 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    color: #444;
     background-color: var(--background);
-    color: #210812;
+    color: var(--secondary);
 }
 
 h1,
@@ -40,6 +38,8 @@ h4 {
 a,
 .download-track {
     color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .download-track {
@@ -51,6 +51,7 @@ a,
 .title {
     text-decoration: none;
     border: 0;
+    text-shadow: 1px 1px 3px #000;
 }
 
 input {
@@ -71,7 +72,7 @@ img {
 
 code {
     padding: 2px 5px;
-    background-color: var(--accent-primary);
+    background-color: var(--accent);
     border-radius: 5px;
     font-family: monospace;
 }
@@ -140,6 +141,6 @@ ul.blog-posts li a:visited {
 
 .card {
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 10px var(--accent-secondary);
+    box-shadow: 0px 0px 10px var(--accent);
     overflow: hidden;
 }
