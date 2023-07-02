@@ -1,0 +1,145 @@
+:root {
+    --background: #F2F1E1;
+    --primary: #21171B;
+    --secondary: #293651;
+    --secondary-transparent: rgba(41, 54, 81, 0.2);
+    --accent-primary: #D9D8CA;
+    --accent-secondary: #4D3C41;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+    background-color: var(--background);
+    color: #210812;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: var(--primary);
+    );
+}
+
+h3,
+h4 {
+    font-weight: normal;
+}
+
+a,
+.download-track {
+    color: var(--secondary);
+}
+
+.download-track {
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+input {
+    font-size: 16px;
+}
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: var(--accent-primary);
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+pre code {
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+    color: var(--primary);
+}
+
+div.highlight pre {
+    background-color: initial;
+    color: initial;
+}
+
+div.highlight code {
+    background-color: unset;
+    color: unset;
+}
+
+blockquote {
+    border-left: 2px solid var(--secondary);
+    padding-left: 10px;
+    font-style: italic;
+    border-radius: 0px 10px 10px 0px;
+    color: var(--secondary);
+    background-color: var(--secondary-transparent);
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+    color: var(--secondary);
+}
+
+.card {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px var(--accent-secondary);
+    overflow: hidden;
+}

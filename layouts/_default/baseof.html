@@ -15,10 +15,10 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
-  {{- partial "style.html" . -}}
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css">
 
   {{ if .Params.maps }}
-            {{ partial "leaflet-loader" . }}
+      {{ partial "leaflet-loader" . }}
   {{ end }}
 </head>
 
