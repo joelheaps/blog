@@ -9,7 +9,7 @@ maps: true
 
 This is a collection of some of my favorite hikes around the Omaha, NE area.
 
-> 💡 Work in Progress!
+>💡 Work in Progress!
 
 ## Jones Creek Pond and Sarah's Trail
 #### 📍 **Loess Hills State Forest, IA** • 3.3 mi

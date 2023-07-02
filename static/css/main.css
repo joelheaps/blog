@@ -98,6 +98,7 @@ div.highlight code {
 blockquote {
     border-left: 2px solid var(--secondary);
     padding-left: 10px;
+    margin-left: 0;
     font-style: italic;
     border-radius: 0px 10px 10px 0px;
     color: var(--secondary);
