@@ -10,6 +10,8 @@
     overflow-wrap: break-word;
     line-height: 1.5;
     color: #444;
+    background-color: #F2F1E1;
+    color: #210812;
   }
 
   h1,
@@ -20,12 +22,22 @@
   h6,
   strong,
   b {
-    color: #222;
+    color: #21171b;
   }
 
-  a {
-    color: #4682b4;
-    /*color: #ff5e6c;*/
+  h3, h4 {
+      font-weight: normal;
+  }
+
+  a,
+  .download-track {
+      color: #293651;
+  }
+
+  .download-track {
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
   }
 
   .title {
@@ -51,7 +63,9 @@
 
   code {
     padding: 2px 5px;
-    background-color: #f2f2f2;
+    background-color: #D9D8CA;
+    border-radius: 5px;
+    font-family: monospace;
   }
 
   pre code {
@@ -61,6 +75,7 @@
     white-space: pre-wrap;
     font-size: 14px;
     overflow-x: auto;
+    color: #4D3C41;
   }
 
   div.highlight pre {
@@ -75,10 +90,11 @@
 
   blockquote {
     border-left: 2px solid #4D3C41;
-    color: #4D3C41;
     padding-left: 10px;
     font-style: italic;
     border-radius: 0px 10px 10px 0px;
+    color: #4D3C41;
+    background-color: rgba(77, 60, 65, 0.15);
   }
 
   footer {
@@ -114,68 +130,10 @@
     color: #8b6fcb;
   }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #F2F1E1;
-      color: #210812;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #21171b;
-    }
-
-    h3, h4 {
-      font-weight: normal;
-    }
-
-    a,
-    .download-track {
-      color: #293651;
-    }
-
-    .download-track {
-        text-align: center;
-        margin-bottom: 25px;
-        cursor: pointer;
-    }
-
-    code {
-      background-color: #D9D8CA;
-      border-radius: 5px;
-      font-family: monospace;
-    }
-
-    pre code {
-      color: #4D3C41;
-    }
-
-    blockquote {
-      color: #4D3C41;
-      background-color: rgba(77, 60, 65, 0.15);
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-
-    .leaflet-map {
-      border-radius: 10px 10px 0px 0px;
-      filter: drop-shadow(0px 0px 10px #4D3C41);
-      clip-path: inset(-30px -30px 0px -30px);
-    }
+  .leaflet-map {
+    border-radius: 10px 10px 0px 0px;
+    filter: drop-shadow(0px 0px 10px #4D3C41);
+    clip-path: inset(-30px -30px 0px -30px);
   }
 
 </style>
