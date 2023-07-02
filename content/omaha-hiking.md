@@ -27,6 +27,6 @@ An easy hike near Moorhead, IA.  Can be hiked either direction, either as an out
 
 West Oak forest is a small county park in the bluffs on the east side of the Missouri River with a network of relatively short trails (and steep climbs).  A loop on through the south ridgeline prairie and overlook is shown below.
 
-{{< leaflet-map mapHeight="250px" mapWidth="100%" mapLat="41.871274" mapLon="-95.925714" zoom="17" scrollWheelZoom="false" >}}
+{{< leaflet-map mapHeight="250px" mapWidth="100%" mapLat="41.871274" mapLon="-95.925715" zoom="17" scrollWheelZoom="false" >}}
     {{< leaflet-track trackPath="west-oak-forest-south-loop.gpx" lineColor="#201B1D" lineWeight="5" >}}
 {{< /leaflet-map >}}
