@@ -7,7 +7,7 @@ maps: true
 
 # Omaha, NE Local Hiking
 
-This is a collection of some of my favorite hiking venues around the Omaha, Nebraska metro.  This is a mix of general hiking "areas" and specific trails.
+This is a collection of some of my favorite hiking venues around the Omaha, Nebraska metro.  This is a mix of general hiking "areas" and specific trails.  List is generally organized from North to South.
 
 ## Jones Creek Pond and Sarah's Trail
 

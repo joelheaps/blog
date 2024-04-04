@@ -14,9 +14,9 @@ enableRobotsTXT = true
 
 ## Main Menu English
 [[menu.main]]
-  name = "Omaha Hiking"
+  name = "Local Hiking"
   weight = 100
-  url = "/omaha-hiking"
+  url = "/local-hiking"
 
 [params.hugoLeaflet]
 
