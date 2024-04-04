@@ -1,4 +1,4 @@
 # blog.joelheaps.com
 ***Blog (maybe?)***
 
-Testing the waters of a new blog, learning a little bit about `CSS` and `HTML` along the way.
+Testing the waters with a new blog and learning how to manage a Hugo site.
