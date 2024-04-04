@@ -20,7 +20,6 @@ This is a collection of some of my favorite hiking venues around the Omaha, Nebr
 ## West Oak Forest
 
 - **Location:** Mills County, IA
-
 - **Description:** West Oak forest is a small county park in the bluffs on the east side of the Missouri River with a network of relatively short trails (and steep climbs).  A loop on through the south ridgeline prairie and overlook is shown below.
 
 ![](west-oak-forest.png)
