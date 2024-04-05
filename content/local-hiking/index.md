@@ -5,11 +5,11 @@ description: Some of my favorite Omaha-area hiking trails.
 maps: true
 ---
 
-# 🥾 Omaha, Nebraska Local Hiking
+# Omaha, Nebraska Local Hiking
 
-This is a collection of some of my favorite hiking venues around the Omaha, Nebraska metro.  This is a mix of general hiking "areas" and specific trails.  List is generally organized from North to South.
+🥾 This is a collection of some of my favorite hiking venues around the Omaha, Nebraska area, **organized roughly from North to South**.  It's a mix of parks, forests, and wildlife preserves within about an hour of the metro.  Most of these places have a network of trails that are worth checking out, but sometimes I'll point out a specific one if it's notable.
 
-## Jones Creek Pond and Sarah's Trail
+## Sarah's Trail from Preparation Canyon to Jones Creek Pond
 
 **Location:** Loess Hills State Forest near Moorhead, IA
 
