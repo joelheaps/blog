@@ -21,6 +21,16 @@ maps: true
 
 ![](sarahs-trail.png)
 
+## Old Town Conservation Area
+
+**Location:** Missouri Valley, IA
+
+**Description:** A quiet park in the hills to the south of Missouri Valley with a mix of hilltop prairie and forest, connected with a modest trail network.
+
+[View as PDF](old-town-conservation-area.pdf)
+
+![](old-town-conservation-area.png)
+
 ## West Oak Forest
 
 **Location:** Mills County, IA
