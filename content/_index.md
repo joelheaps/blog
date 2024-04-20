@@ -7,7 +7,7 @@ maps: true
 
 # Welcome
 
-My name is Joel, and this is a new site for me to share...well, I haven't completely hashed out what will live here, but for now check out [hiking trails around Omaha, NE](omaha-hiking) and my landing page at [joelheaps.com](joelheaps.com).
+My name is Joel, and this is a new site for me to share...well, I haven't completely hashed out what will live here, but for now check out [hiking trails around Omaha, NE](local-hiking) and my landing page at [joelheaps.com](joelheaps.com).
 
 ***Thanks to:***
 
