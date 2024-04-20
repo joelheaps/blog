@@ -1,63 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:ital,wght@0,400;1,600?family=Source+Code+Pro:wght@400');
+
 :root {
-    --background: #041E23;
-    --accent: #E35B00;
-    --primary: #ECF0C1;
-    --secondary: #4A9D8F;
-    --secondary-transparent: #4a9d8f27;
+    --width: 720px;
+    --font-main: "Atkinson Hyperlegible", sans-serif;
+    --font-secondary: "Atkinson Hyperlegible", sans-serif;
+    --font-scale: 1em;
+    --background-color: #F2F1E1;
+    --heading-color: #082108;
+    --text-color: #18161B;
+    --link-color: #2A6641;
+    --visited-color:  #2A6641;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #01242e;
+        --heading-color: #eee;
+        --text-color: #ddd;
+        --link-color: #8cc2dd;
+        --visited-color:  #8b6fcb;
+        --code-background-color: #000;
+        --code-color: #ddd;
+        --blockquote-color: #ccc;
+    }
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
     margin: auto;
     padding: 20px;
-    max-width: 720px;
+    max-width: var(--width);
     text-align: left;
+    background-color: var(--background-color);
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    background-color: var(--background);
-    color: var(--secondary);
+    color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b {
-    color: var(--primary);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
 }
 
-h3,
-h4 {
-    font-weight: normal;
-}
-
-a,
-.download-track {
-    color: var(--accent);
+a {
+    color: var(--link-color);
+    cursor: pointer;
     text-decoration: none;
-    font-weight: 600;
 }
 
-.download-track {
-    text-align: center;
-    margin-bottom: 25px;
+a:hover {
+    text-decoration: underline; 
+}
+
+nav a {
+    margin-right: 8px;
+}
+
+strong, b {
+    color: var(--heading-color);
+}
+
+button {
+    margin: 0;
     cursor: pointer;
 }
 
-.title {
-    text-decoration: none;
-    border: 0;
-    text-shadow: 1px 1px 3px #000;
+time {
+ 	font-family: monospace;
+  	font-style: normal;
+  	font-size: 15px;
 }
 
-input {
-    font-size: 16px;
-}
-
-content {
+main {
     line-height: 1.6;
 }
 
@@ -65,62 +84,58 @@ table {
     width: 100%;
 }
 
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+
 img {
     max-width: 100%;
 }
 
 code {
-    padding: 2px 5px;
-    background-color: #68805c;
-    border-radius: 5px;
-    font-family: monospace;
-}
-
-pre code {
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-    overflow-x: auto;
-    color: var(--primary);
-}
-
-div.highlight pre {
-    background-color: initial;
-    color: initial;
-}
-
-div.highlight code {
-    background-color: unset;
-    color: unset;
+    font-family: "Source Code Pro", monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
 }
 
 blockquote {
-    border-left: 2px solid var(--secondary);
-    padding-left: 10px;
-    margin-left: 0;
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
     font-style: italic;
-    border-radius: 0px 10px 10px 0px;
-    color: var(--secondary);
-    background-color: var(--secondary-transparent);
 }
 
 footer {
-    padding: 25px;
+    padding: 25px 0;
     text-align: center;
 }
 
-.helptext {
-    color: #777;
-    font-size: small;
+.title:hover {
+    text-decoration: none;
 }
 
-.errorlist {
-    color: #eba613;
-    font-size: small;
+.title h1 {
+    font-size: 1.5em;
 }
 
-/* blog posts */
+.inline {
+    width: auto !important;
+}
+
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+}
+
+/* blog post list */
 ul.blog-posts {
     list-style-type: none;
     padding: unset;
@@ -135,11 +150,13 @@ ul.blog-posts li span {
 }
 
 ul.blog-posts li a:visited {
-    color: var(--secondary);
+    color: var(--visited-color);
 }
 
-.card {
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 10px var(--accent);
-    overflow: hidden;
+.dropcap {
+  float: left;
+  font-size: 5em;
+  line-height: 0.85;
+  margin-right: 0.1em;
+  color: var(--heading-color)
 }

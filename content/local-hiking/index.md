@@ -7,7 +7,7 @@ maps: true
 
 # Omaha, Nebraska Local Hiking
 
-🥾 This is a collection of some of my favorite hiking venues around the Omaha, Nebraska area, **organized roughly from North to South**.  It's a mix of parks, forests, and wildlife preserves within about an hour of the metro.  Most of these places have a network of trails that are worth checking out, but sometimes I'll point out a specific one if it's notable.
+{{< dropcap char="T" >}}his is a collection of some of my favorite hiking venues around the Omaha, Nebraska area, **organized roughly from North to South**.  It's a mix of parks, forests, and wildlife preserves within about an hour of the metro.  Most of these places have a network of trails that are worth checking out, but sometimes I'll point out a specific one if it's notable.
 
 ## Sarah's Trail from Preparation Canyon to Jones Creek Pond
 
