@@ -39,9 +39,9 @@ A quiet park in the hills to the south of Missouri Valley with a mix of hilltop 
 
 Riverside wildlife refuge a few miles outside of Fort Calhoun, NE with a ~9 mi. trail loop.  Trails are flat, well-mowed, and easy to follow.
 
-[View as PDF](hitchcock.pdf)
+[View as PDF](boyer-chute.pdf)
 
-![](hitchcock.png)
+![](boyer-chute.png)
 
 ## Hitchcock Nature Center
 
