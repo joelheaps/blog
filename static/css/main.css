@@ -155,8 +155,8 @@ ul.blog-posts li a:visited {
 
 .dropcap {
   float: left;
-  font-size: 5em;
-  line-height: 0.85;
-  margin-right: 0.1em;
+  font-size: 3.1em;
+  line-height: 1.0em;
+  margin-right: 0.2em;
   color: var(--heading-color)
 }
