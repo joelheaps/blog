@@ -9,15 +9,17 @@ maps: true
 
 My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
 
-## Resume
+## What I Do and What I Know
 
-💻 Software developer
+If you were looking for the Cliff Notes of my resume, here's a little bit about me:
 
-  - Python application development
+💻 Software developmer
+
+  - Python application development (mostly backend work with geospatial data)
   - Systems design
   - Application containerization (and orchestration with Kubernetes)
-  - Linux system administation
   - GitLab CI/CD pipelines
+  - Linux system administation
   - CompTIA Security+ certificated
 
 🌐 Network engineer
@@ -38,4 +40,8 @@ My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too
 
 📷 Amateur landscape photographer
 
+  - See some of my photos on [Unsplash](https://unsplash.com/@joelheaps)
+
 ☕ Coffee enthusiast
+
+  - Ask me about my Aeropress!
