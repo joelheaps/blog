@@ -5,13 +5,13 @@ description: Things to share
 maps: true
 ---
 
-# Welcome
+# Welcome!
 
-My name is Joel, and this is a new site for me to share...well, I haven't completely hashed out what will live here, but for now check out [hiking trails around Omaha, NE](local-hiking) and my landing page at [joelheaps.com](joelheaps.com).
+My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
 
-***Thanks to:***
+***Credits:***
 
 - *[Hugo](https://gohugo.io/), the static-site generator faithfully building these pages.*
 - *[Herman Martinus and Bear Blog](https://herman.bearblog.dev/) for inspiring this blog and the theme it uses.*
-- *[janraasch's `hugo-bearblog` theme](https://github.com/janraasch/hugo-bearblog), for saving me the legwork of copying the Bear Blog theme by hand.*
+- *[janraasch's `hugo-bearblog` theme](https://github.com/janraasch/hugo-bearblog), for saving me some CSS legwork.*
 
