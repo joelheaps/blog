@@ -9,9 +9,33 @@ maps: true
 
 My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
 
-***Credits:***
+## Bullet resume
 
-- *[Hugo](https://gohugo.io/), the static-site generator faithfully building these pages.*
-- *[Herman Martinus and Bear Blog](https://herman.bearblog.dev/) for inspiring this blog and the theme it uses.*
-- *[janraasch's `hugo-bearblog` theme](https://github.com/janraasch/hugo-bearblog), for saving me some CSS legwork.*
+💻 **Software developer**
 
+    Python application development
+    Systems design
+    Application containerization (and orchestration with Kubernetes)
+    Linux system administation
+    GitLab CI/CD pipelines
+    CompTIA Security+ certificate
+
+🌐 **Network engineer**
+
+    Cisco Certified Network Associate (CCNA)
+    MikroTik routing, switching, and configuration automation
+    WISP network design and operation
+    dn42 community BGP mesh-network participant
+
+✈️ **Pilot**
+
+    Flight Instructor (CFI)
+    Commercial Pilot (CPL)
+    Instrument Rated
+    Remote Pilot (UAS)
+
+⛺ Outdoor enthusiast; backpacking, trail running, skiing, etc.
+
+📷 Amateur landscape photographer
+
+☕ Coffee enthusiast
