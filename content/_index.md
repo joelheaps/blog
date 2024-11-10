@@ -9,30 +9,30 @@ maps: true
 
 My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
 
-## Bullet resume
+## Resume
 
-💻 **Software developer**
+💻 Software developer
 
-    Python application development
-    Systems design
-    Application containerization (and orchestration with Kubernetes)
-    Linux system administation
-    GitLab CI/CD pipelines
-    CompTIA Security+ certificate
+  - Python application development
+  - Systems design
+  - Application containerization (and orchestration with Kubernetes)
+  - Linux system administation
+  - GitLab CI/CD pipelines
+  - CompTIA Security+ certificated
 
-🌐 **Network engineer**
+🌐 Network engineer
 
-    Cisco Certified Network Associate (CCNA)
-    MikroTik routing, switching, and configuration automation
-    WISP network design and operation
-    dn42 community BGP mesh-network participant
+  - Cisco Certified Network Associate (CCNA)
+  - MikroTik routing, switching, and configuration automation
+  - WISP network design and operation
+  - dn42 community BGP mesh-network participant
 
-✈️ **Pilot**
+✈️ Pilot
 
-    Flight Instructor (CFI)
-    Commercial Pilot (CPL)
-    Instrument Rated
-    Remote Pilot (UAS)
+  - Flight Instructor (CFI)
+  - Commercial Pilot (CPL)
+  - Instrument Rated
+  - Remote Pilot (UAS)
 
 ⛺ Outdoor enthusiast; backpacking, trail running, skiing, etc.
 
