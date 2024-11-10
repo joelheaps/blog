@@ -9,11 +9,11 @@ maps: true
 
 My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
 
-## What I Do and What I Know
+## About Me
 
-If you were looking for the Cliff Notes of my resume, here's a little bit about me:
+If you were looking for the Cliff Notes of my resume, here's a little bit about what I do and what I know:
 
-💻 Software developmer
+💻 Software developer
 
   - Python application development (mostly backend work with geospatial data)
   - Systems design
