@@ -7,41 +7,43 @@ maps: true
 
 # Welcome!
 
-My name is Joel.  I'm a Python developer living in Nebraska (US) who has way too many hobbies, and this blog is a place to share and show off some of my projects -- both techy and otherwise.
+I'm Joel.  I'm a software developer living in Nebraska (US) who has too many hobbies, and this blog is a place to share and show off some of my projects -- both tech-related and otherwise.
 
 ## About Me
 
-If you were looking for the Cliff Notes of my resume, here's a little bit about what I do and what I know:
+A bit more about what I do and what I know:
 
-💻 Software developer
+💻 Software development
 
-  - Python application development (mostly backend work with geospatial data)
-  - Systems design
-  - Application containerization (and orchestration with Kubernetes)
-  - GitLab CI/CD pipelines
+  - Data processing systems design
+  - Python application development (mostly backend-type projects)
+  - Application containerization and orchestration (using Docker, k8s, etc.)
   - Linux system administation
-  - CompTIA Security+ certificated
+  - CompTIA Security+ certificate holder
 
-🌐 Network engineer
+🌐 Network engineering
 
-  - Cisco Certified Network Associate (CCNA)
-  - MikroTik routing, switching, and configuration automation
+  - IPv6 enthusiast
+  - Cisco CCNA certificate holder
+  - Routing, switching, and configuration automation on MikroTik devices
   - WISP network design and operation
   - dn42 community BGP mesh-network participant
 
-✈️ Pilot
+✈️ Flying
 
   - Flight Instructor (CFI)
   - Commercial Pilot (CPL)
   - Instrument Rated
   - Remote Pilot (UAS)
 
-⛺ Outdoor enthusiast; backpacking, trail running, skiing, etc.
+⛺ Outdoorsy stuff
 
-📷 Amateur landscape photographer
+  - [OpenStreetMap contributor](https://www.openstreetmap.org/user/joelheaps)
+  - Hiking and biking
+  - Skiing
+  - [Landscape photography](https://unsplash.com/@joelheaps)
 
-  - See some of my photos on [Unsplash](https://unsplash.com/@joelheaps)
+☕ Other stuff
 
-☕ Coffee enthusiast
-
-  - Ask me about my Aeropress!
+  - Coffee enthusiast
+  - General nerd
