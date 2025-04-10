@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:ital,wght@0,400;1,600?family=Source+Code+Pro:wght@400');
+@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;1,600?family=Source+Code+Pro:wght@400');
 
 :root {
     --width: 720px;
-    --font-main: "Atkinson Hyperlegible", sans-serif;
-    --font-secondary: "Atkinson Hyperlegible", sans-serif;
+    --font-main: "Atkinson Hyperlegible Next", sans-serif;
+    --font-secondary: "Atkinson Hyperlegible Next", sans-serif;
     --font-scale: 1em;
     --background-color: #F2F1E1;
     --heading-color: hsl(120, 61%, 10%);
