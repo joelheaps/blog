@@ -13,6 +13,6 @@ enableRobotsTXT = true
 
 ## Main Menu English
 [[menu.main]]
-  name = "Local Hiking"
+  name = "Omaha Hiking"
   weight = 100
-  url = "/local-hiking"
+  url = "/omaha-hiking"
