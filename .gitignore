@@ -18,3 +18,5 @@ hugo.linux
 
 .jj/
 .github/
+.aider*
+.DS_Store
