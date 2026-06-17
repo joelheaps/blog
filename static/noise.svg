@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 40" preserveAspectRatio="none">
+  <defs>
+    <!-- solid on the left, dissolving to nothing across the right third -->
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0.65" stop-color="#fff"/>
+      <stop offset="0.92" stop-color="#888"/>
+      <stop offset="1"    stop-color="#000"/>
+    </linearGradient>
+    <filter id="dither" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <!-- fine, even noise (single octave = no blobby clumps), alpha forced to 1 -->
+      <feTurbulence type="fractalNoise" baseFrequency="2.0" numOctaves="1" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0.33 0.33 0.33 0 0
+                0    0    0    0 1" result="gn"/>
+      <!-- average gradient with noise (keeps alpha = 1) -->
+      <feComposite in="SourceGraphic" in2="gn" operator="arithmetic"
+        k1="0" k2="0.5" k3="0.5" k4="0" result="mix"/>
+      <!-- move that brightness into the alpha channel ... -->
+      <feColorMatrix in="mix" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0.33 0.33 0.33 0 0"/>
+      <!-- ... then hard-threshold alpha: opaque = shown, transparent = dissolved -->
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 1"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#fade)" filter="url(#dither)"/>
+</svg>

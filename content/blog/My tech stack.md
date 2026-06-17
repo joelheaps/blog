@@ -6,7 +6,7 @@ date = "2025-11-26T03:47:18-06:00"
 # description is optional
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
-draft = true
+draft = false
 tags = ["tech"]
 +++
 
