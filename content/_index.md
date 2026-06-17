@@ -6,32 +6,18 @@ weight = 1
 
 # Hello!
 
-I'm Joel, a software developer and systems engineer.  I currently build and operate data processing pipelines using Python, and occasionally provide network operations and Linux sysadmin support.
+I'm Joel.
 
-I love learning and solving tough problems, and when I'm not at work or on a trail, I'm often tinkering with my homelab or trying to pick up a new programming language.
+There's a thousand directions one could take when writing an introduction on a personal site like this.
 
-## More things I do
+**Are you here professionally?**  Welcome!  You may be interested in my work: I'm a software and systems engineer working on remote sensing systems and data processing pipelines.  Most of my time is in a Python IDE, but I touch containerization and orchestration systems, networking (it's always DNS!) and monitoring solutions on the regular.  I like tackling wide problems.
 
-💻 Software development
+**Are you here just for fun?**  Well, I am too!  When I'm not coding or breaking my homelab, I'm out hiking, doing some landscape photography, flying an old Cessna, or maybe running away to the mountains for a few days to get the skis cold again.
 
-  - Data processing systems design
-  - Python application development and CI/CD
-  - Application containerization and orchestration
+## Connect with me
 
-🌐 Network engineering
+Email `hello [at] $this_domain`.
 
-  - Routing, switching, and config automation
+Read some code at [github.com/joelheaps](https://github.com/joelheaps).  You can check out my [projects page](/projects).
 
-✈️ Flying
-
-  - Flight Instructor (CFI), with Commercial license (CPL) and instrument rating; I mostly fly for fun these days.
-
-⛺ Outdoorsy stuff
-
-  - Hiking and [OpenStreetMap contributing](https://www.openstreetmap.org/user/joelheaps); I map local trails them so others can find them too.
-  - Skiing
-  - [Landscape photography](https://unsplash.com/@joelheaps)
-
-## Connect
-
-Email `joel [at] $this_domain` &emsp;//&emsp; [github.com/joelheaps](https://github.com/joelheaps)
+See some of my photography on [Unsplash](https://unsplash.com/@joelheaps).

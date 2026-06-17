@@ -17,3 +17,7 @@ This little project will also give me a chance to play with the output from NOAA
 I'm keeping things scoped to the US for now (as part of the motivation is to explore these national forecast products), but if things pan out, I could see myself exploring Canadian and Australian support in the future, as well as providing real-time weather.
 
 But...baby first!  We'll see where this project lands. 🛬
+
+#### June 2026 Update
+
+As any fellow parents are probably familiar with, I overestimated how much time I could commit to this project, and it's on hold for the time being.  I hope to still launch it someday when inspiration strikes again.

@@ -56,11 +56,9 @@ I've gone through multiple iterations of monitoring stacks for my homelab/person
 
 Gatus is a simple Go-based monitoring tool with support for up/down checks against a variety of endpoints.  I can check ICMP status of network equipment and HTTP reachability of my internal and public services, for example.  There's an experimental remote instance feature now too, so I can deploy remote Gatus instances to reach hosts that may not be directly available through a VPN, for example.
 
-### Log collection - To do
+### Log collection - Victoria Logs
 
-This is something I feel strongly enough that I need to do that it gets a spot on this list, but it's not something I've implemented yet.  Logs get checked on the thing that produces them.
-
-If you have a recommendation, please write me.
+I haven't deployed log collection across all of my hosts yet, but I've started kicking the tires with Victoria Logs with some of my networking devices.  It's been simple to setup and the interface is approachable.  More to come later.
 
 ## Services
 
@@ -73,6 +71,14 @@ Most of my use cases involve automating lights, HVAC, and tracking electricity u
 ### Document management - Paperless-ngx
 
 This is a relatively new addition to my toolkit, but I've really enjoyed it.  Paperless is a web-based document management tool that organizes docs as PDFs with tags, metadata, OCR, and full-text search.  There are some related LLM-based tools that can work with Paperless to add even more functionality; someday I'll try these as well.
+
+#### Helpers
+
+**OCR and tagging:** I used an LLM-based tagging solution for documents scanned into Paperless, but after fighting some nebuluous issues, I decided to roll my own solution with Python, Google Document AI, and an OpenRouter API key.  New docs are automatically OCR'd using Doc AI (which Paperless otherwise provides, but this is arguably higher quality) and subsequently categorized against my tags.
+
+**MCP connection:** I'm tinkering with a Go-based MCP server to make it easier to query my document data with an LLM.
+
+**Auotmatic scanning:** My current ingest workflow involves loading a paper into a small Brother feed-style scanner I have connected to an old Dell thin-client running a small Python service.  The service detects when a paper is loaded, scans the page(s), converts them to PDF, and uploads them to Paperless automatically.
 
 ### Media management - Jellyfin
 
@@ -93,8 +99,8 @@ I've bounced around and off of note taking tools for years.  Obsidian isn't perf
 - and iOS syncing (using the community LiveSync plugin)
 - for free or cheap (free in this case).
 
-### Code editor - Helix and VSCode
+### Code editor - Helix and Zed
 
-Helix is a great terminal-based editor with good keybindings and language integration features out-of-the-box.  Sometimes I like to have a GUI to work on larger or more complicated projects though, and it's hard to ignore the utility and flexibility of Visual Studio Code.
+I waffle back-and-forth between terminal-based workflows and a full GUI.  Helix is a great "it just works" solution for the terminal; keybindings are close enough to Vim to feel familiar, but it comes with better command hinting and search features out-of-the-box.  As a more typical IDE, Zed provides a cleaner look and feel out of the box than, say, VSCode, and I've found myself using it more and more lately.
 
 With both tools, I've been using the intentionally simplistic [Alabaster theme](https://github.com/tonsky/vscode-theme-alabaster) lately (or a variation thereof) to provide more practical syntax highlighting.
